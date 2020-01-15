@@ -1,0 +1,13 @@
+name: 'Download Release Artifact'
+description: 'Download artifacts from releases.'
+author: 'iCrawl'
+branding:
+  icon: check-circle
+  color: yellow
+inputs:
+  path:
+    description: 'Path to save the files to'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
